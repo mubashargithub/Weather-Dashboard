@@ -80,7 +80,7 @@ document.addEventListener("click", (e) => {
     if (e.target !== elements.cityInput) closeDropdown();
 });
 
-==== Current Location Handler ====
+// ==== Current Location Handler ====
 elements.currentLocationBtn.addEventListener("click", async function () {
     if (!navigator.geolocation) {
         alert("Geolocation is not supported by this browser.");
