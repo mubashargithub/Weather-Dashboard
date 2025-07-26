@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="header">
+                <p>Weather Dashboard</p>
+            </div>
+            <div class="main-box">
+                <div class="mb-left">
+                    <div class="left-head">
+                        <p>Enter a City Name</p>
+                    </div>
+                    <div class="left-input">
+                        <input type="text" name="" id="city-input" placeholder="E.g.,Multan,Islamabad,Lahore">
+                    </div>
+                    <div class="search-btn">
+                        <button>Search</button>
+                        <!-- <br> -->
+                    </div>
+                    <hr id="hr1">
+                    <div class="current-location">
+                        <button>Use Current Location</button>
+                    </div>
+                </div>
+                <div class="mb-right">
+                    <div class="right-upper">
+                        <div class="r-u-left">
+                            <div class="city">
+                                <p><span id="rb-cityname">London</span> <span id="rb-date">(2025-06-19)</span></p>
+                            </div>
+                            <div class="WD temp">
+                                <p>Temperature : <span></span></p>
+                            </div>
+                            <div class="WD wind">
+                                <p>Wind : </p>
+                            </div>
+                            <div class="WD hum">
+                                <p>Humidity : </p>
+                            </div>
+                        </div>
+                        <div class="r-u-right">
+                            <img src="modrate-rain.png" alt="">
+                            <p id="r-u-logo-name">Modrate-rain</p>
+                        </div>
+                    </div>
+                    <div class="right-lower">
+                            <div id="r-l-item1"><p>4 Days Forcast</p></div>
+
+                            <div class="forcast1234">
+                                <div><p id="forcastdate">(2023-06-19)</p></div>
+                                <div id="forcastimg"><img src="modrate-rain.png" alt=""></div>
+                                <div>
+                                    <p class="forc-info forcast-temp">Temp: <span id="FC-Day1-temp"></span> </p>
+                                    <p class="forc-info forcast-wind">Wind: <span id="FC-Day1-wind"></span> </p>
+                                    <p class="forc-info forcast-humi">Hum: <span id="FC-Day1-humi"></span> </p>
+                                </div>
+                            </div>
+                        
+                            <div class="forcast1234">
+                                <div><p id="forcastdate">(2023-06-19)</p></div>
+                                <div id="forcastimg"><img src="modrate-rain.png" alt=""></div>
+                                <div>
+                                    <p class="forc-info forcast-temp">Temp: <span id="FC-Day1-temp"></span> </p>
+                                    <p class="forc-info forcast-wind">Wind: <span id="FC-Day1-wind"></span> </p>
+                                    <p class="forc-info forcast-humi">Hum: <span id="FC-Day1-humi"></span> </p>
+                                </div>
+                            </div>
+                        
+                            <div class="forcast1234">
+                                <div><p id="forcastdate">(2023-06-19)</p></div>
+                                <div id="forcastimg"><img src="modrate-rain.png" alt=""></div>
+                                <div>
+                                    <p class="forc-info forcast-temp">Temp: <span id="FC-Day1-temp"></span> </p>
+                                    <p class="forc-info forcast-wind">Wind: <span id="FC-Day1-wind"></span> </p>
+                                    <p class="forc-info forcast-humi">Hum: <span id="FC-Day1-humi"></span> </p>
+                                </div>
+                            </div>
+                        
+                            <div class="forcast1234">
+                                <div><p id="forcastdate">(2023-06-19)</p></div>
+                                <div id="forcastimg"><img src="modrate-rain.png" alt=""></div>
+                                <div>
+                                    <p class="forc-info forcast-temp">Temp: <span id="FC-Day1-temp"></span> </p>
+                                    <p class="forc-info forcast-wind">Wind: <span id="FC-Day1-wind"></span> </p>
+                                    <p class="forc-info forcast-humi">Hum: <span id="FC-Day1-humi"></span> </p>
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

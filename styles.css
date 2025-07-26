@@ -1,0 +1,505 @@
+/* Compulsary Things code Start */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: #007BFF; /* or your theme color */
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Compulsary Things code End */
+
+
+
+.container{
+    width: 100%;
+    height: 110vh;
+    /* border: 3px solid rgb(95, 95, 95); */
+    background-color: rgb(113, 130, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    /* border: 3px solid rgb(215, 228, 36); */
+    width: 90%;
+    height: 100vh;
+    background-color: rgb(197, 252, 130);
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background-color: rgb(255, 198, 27);
+    height: 60px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header>p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main-box{
+    display: flex;
+    gap: 20px;
+    /* border: 3px solid rgb(168, 15, 15); */
+    height: 100%;
+    padding: 20px;
+}
+
+.mb-left{
+    /* border: 3px solid rgb(95, 95, 95); */
+    width: 33%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-head{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.left-input>input{
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 100%;
+}
+
+.search-btn{
+    text-align: center;
+}
+
+.search-btn>button{
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: #454444;
+    padding: 4px;
+    color: #f9f9f9;
+    font-weight: 800;
+    /* border: 2px solid red; */
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+.search-btn>button:hover{
+    /* color: aqua; */
+    background-color: rgb(2, 2, 2);
+}
+
+.current-location{
+    text-align: center;
+}
+
+
+.current-location>button{
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: rgb(203, 132, 46);
+    padding: 7px;
+    color: #f9f9f9;
+    font-weight: 800;
+    /* border: 2px solid red; */
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+.current-location>button:hover{
+    /* color: aqua; */
+    background-color: rgb(162, 89, 1);
+}
+
+
+
+
+.mb-right{
+    /* border: 3px solid rgb(95, 95, 95); */
+    width: 67%;
+    padding: 5px;
+    /* background-color: #ffd24b; */
+    /* height: 90vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-upper{
+    /* border: 3px solid rgb(95, 95, 95); */
+    height: 33%;
+    background-color: #000000;
+    display: flex;
+    padding: 5px 15px;
+}
+
+.r-u-left{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #ffcf3e;
+    padding: 3px 10px;
+}
+
+.WD{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#city-input{
+  background-color: #ffffff;
+}
+
+.city>p{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.r-u-right{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.r-u-right>p{
+    color: #ffd65d;
+}
+
+.r-u-right>img{
+    width: 90px;
+    height: 90px;
+    /* background-color: #000000; */
+    border-radius: 20px;
+}
+
+.right-lower{
+    /* border: 3px solid rgb(95, 95, 95); */
+    height: 68%;
+    background-color: #000000;
+    padding: 5px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 1fr;
+    grid-column-gap: 10px;
+}
+
+#r-l-item1{
+  grid-column-start: 1;
+  grid-column-end: 5;
+   color: #ffd65d;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.forcast1234{
+    border: 4px solid grey;
+    background-color: #78ffe8;
+    height: 90%;
+    border-radius: 8px;
+    display: flex;
+    padding: 0px 5px;
+    margin: 0px 0px;
+    flex-direction: column;
+    gap: 10px;
+}
+#forcastdate{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+#forcastimg{
+    height: 40px;
+    text-align: center;
+}
+#forcastimg>img{    
+    width: 40px;
+    height: 40px;
+}
+
+.forc-info{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+
+
+.autocomplete-items {
+  position: absolute;
+  background: white;
+  /* border: 1px solid #ccc; */
+  z-index: 99;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.autocomplete-items div:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+/* Media Quaries CODE */
+
+/* ===== Media Queries for Responsiveness ===== */
+
+/* For tablets and smaller desktops (1024px and below) */
+@media (max-width: 1024px) {
+  .main-box {
+    flex-direction: column;
+    height: auto;
+  }
+  .container{
+    height: 170vh;
+  }  
+  .main{
+    height: 165vh;
+  }
+
+
+  .mb-left, .mb-right {
+    width: 100% !important;
+  }
+  
+  .right-lower {
+    height: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 35px 1fr 1fr;
+    grid-row-gap: 10px;
+  }
+  #r-l-item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .forcast1234 {
+    min-height: 200px;
+  }
+}
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+  .header > p {
+    font-size: 1.5rem;
+  }
+
+  .main-box{
+    flex-direction: column;
+  }
+  
+  .container{
+    height: auto;
+  }
+  .main{
+    height: auto;
+  }
+
+  .left-head {
+    font-size: 1.2rem;
+  }
+  /*  */
+  .right-lower {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  /* Remove the grid completely for mobile and use flex instead */
+  .right-lower > div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /*  */
+  .city > p {
+    font-size: 1.2rem;
+  }
+  
+  .WD {
+    font-size: 1rem;
+  }
+  
+  .r-u-right > img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* For mobile devices (600px and below) */
+/* For mobile devices (600px and below) */
+@media (max-width: 600px) {
+  .container {
+    height: auto;
+    padding: 10px 0;
+  }
+  
+  .main {
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  #forcastdate{
+    font-size: 2rem;
+  }
+
+  .header {
+    height: 50px;
+  }
+  
+  .header > p {
+    font-size: 1.3rem;
+  }
+  
+  .right-upper {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+  
+  .r-u-left {
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 15px;
+    
+  }
+  
+  .r-u-left>div>p{
+    font-size: 1.4rem;
+  }
+
+  
+
+  .r-u-right {
+    align-items: flex-start;
+  }
+  
+  .right-lower {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  /* Remove the grid completely for mobile and use flex instead */
+  .right-lower > div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Add forecast heading before the forecast boxes */
+  .right-lower::before {
+    content: "Next 4-Days Forecast";
+    display: block;
+    color: #ffd65d;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* Hide the original grid item that contained the heading */
+  #r-l-item1 {
+    display: none;
+  }
+  
+  .forcast1234 {
+    min-height: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .search-btn > button, 
+  .current-location > button {
+    font-size: 1.1rem;
+    padding: 8px;
+  }
+}
+
+/* For very small mobile devices (400px and below) */
+@media (max-width: 400px) {
+  .header > p {
+    font-size: 1.1rem;
+  }
+
+  .left-head {
+    font-size: 1rem;
+  }
+  
+  .left-input > input {
+    font-size: 1rem;
+  }
+  
+  .city > p {
+    font-size: 1rem;
+  }
+  
+  #forcastdate {
+    font-size: 1rem;
+  }
+  
+  .forc-info {
+    font-size: 0.9rem;
+  }
+}
+
+/* Landscape orientation for mobile devices */
+@media (max-height: 500px) and (orientation: landscape) {
+  .container {
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .main-box {
+    flex-direction: row;
+  }
+  
+  .mb-left {
+    width: 40% !important;
+  }
+  
+  .mb-right {
+    width: 60% !important;
+  }
+  
+  .right-lower {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
