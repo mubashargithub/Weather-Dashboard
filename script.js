@@ -80,34 +80,34 @@ document.addEventListener("click", (e) => {
     if (e.target !== elements.cityInput) closeDropdown();
 });
 
-// ==== Current Location Handler ====
-// elements.currentLocationBtn.addEventListener("click", async function () {
-//     if (!navigator.geolocation) {
-//         alert("Geolocation is not supported by this browser.");
-//         return;
-//     }
+==== Current Location Handler ====
+elements.currentLocationBtn.addEventListener("click", async function () {
+    if (!navigator.geolocation) {
+        alert("Geolocation is not supported by this browser.");
+        return;
+    }
 
-//     try {
-//         const position = await new Promise((resolve, reject) => {
-//             navigator.geolocation.getCurrentPosition(resolve, reject);
-//         });
+    try {
+        const position = await new Promise((resolve, reject) => {
+            navigator.geolocation.getCurrentPosition(resolve, reject);
+        });
 
-//         const { latitude, longitude } = position.coords;
-//         const response = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`);
-//         const data = await response.json();
+        const { latitude, longitude } = position.coords;
+        const response = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`);
+        const data = await response.json();
         
-//         const city = data.city || data.locality || data.principalSubdivision;
-//         if (city) {
-//             elements.cityInput.value = city;
-//             fetchWeatherData(city);
-//         } else {
-//             alert("Could not determine your city from location.");
-//         }
-//     } catch (error) {
-//         console.error("Geolocation error:", error);
-//         alert("Error getting your location. Please make sure location services are enabled.");
-//     }
-// });
+        const city = data.city || data.locality || data.principalSubdivision;
+        if (city) {
+            elements.cityInput.value = city;
+            fetchWeatherData(city);
+        } else {
+            alert("Could not determine your city from location.");
+        }
+    } catch (error) {
+        console.error("Geolocation error:", error);
+        alert("Error getting your location. Please make sure location services are enabled.");
+    }
+});
 
 // ==== Search Button Handler ====
 elements.searchBtn.addEventListener("click", function () {
