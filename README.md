@@ -53,14 +53,23 @@ Open index.html in your browser
 ## File Structure
    - weather-dashboard/
   ├── assets/
+
   │   ├── css/
+  
   │   │   └── style.css
+  
   │   ├── images/
+  
   │   │   └── screenshot.png
+  
   │   └── js/
+  
   │       ├── config.js (create this file)
+  
   │       └── script.js
+  
   ├── index.html
+  
   └── README.md
 
 ## Live Demo --->   https://github.com/mubashargithub/Weather-Dashboard/
