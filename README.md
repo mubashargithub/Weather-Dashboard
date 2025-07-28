@@ -1,7 +1,5 @@
 # Weather Dashboard
 
-![Weather Dashboard Screenshot](./assets/images/screenshot.png) <!-- Add your screenshot path -->
-
 A responsive weather application that displays current weather conditions and 5-day forecast for searched cities.
 
 ## Features
