@@ -39,7 +39,7 @@ A responsive weather application that displays current weather conditions and 4-
    ```bash
    git clone https://mubashargithub.github.io/Weather-Dashboard/
    cd weather-dashboard
-   bash```
+   
 Open index.html in your browser
 
 ## Usage
