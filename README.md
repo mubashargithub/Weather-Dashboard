@@ -1,6 +1,6 @@
 # Weather Dashboard
 
-A responsive weather application that displays current weather conditions and 5-day forecast for searched cities.
+A responsive weather application that displays current weather conditions and 4-day forecast for searched cities.
 
 ## Features
 
@@ -8,7 +8,7 @@ A responsive weather application that displays current weather conditions and 5-
   - City name, date, and weather icon
   - Temperature, humidity, wind speed, and UV index (with color-coded severity)
   
-- **5-Day Forecast**:
+- **4-Day Forecast**:
   - Date, weather icon, temperature, and humidity for each day
   
 - **Search Functionality**:
